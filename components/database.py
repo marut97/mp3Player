@@ -37,12 +37,3 @@ class Database:
             return self.songs[current_index - 1]
         else:
             return self.songs[len(self.songs) - 1]
-
-
-if __name__ == "__main__":
-    db = Database()
-    print(db.get_songs())
-    print(db.get_song(0))
-    print(db.get_song(1))
-    print(db.get_next_song(0))
-    print(db.get_previous_song(0))
